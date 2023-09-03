@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style css/login.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <style>
+    @media(max-width:1295px) {
+      .warb {
+        margin-top: 5%;
+        position: relative;
+        width: 94vw;
+        height: 112vh;
+        justify-content: center;
+      }
+
+      .demo1 {
+        bottom: 4%;
+        left: 5%;
+      }
+
+      .demo {
+        top: -7%;
+        left: 5%;
+      }
+
+      header::before {
+        height: 132vh;
+      }
+
+      .center {
+        margin-left: 8%;
+      }
+    }
+
+    @media(max-width:502px) {
+      .center {
+        margin-left: 0;
+      }
+
+      .demo {
+        width: 387px;
+        margin-left: -1%;
+      }
+
+    }
+
+    @media(max-width:426px) {
+      .center #reg {
+        width: 330px;
+      }
+    }
+
+    @media(max-width:362px) {
+      .center #reg {
+        width: 296px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ==============================================================================
+                       navbar section
+==============================================================================  -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Link</a>
+            </li>
+
+          </ul>
+          <form class="d-flex navbar-nav ms-auto mb-2 mb-lg-0">
+            <a href="sign_up.html" class="btn btn-outline-light" onclick="hide()">Sign up</a>
+            <a href="login.html" class="btn btn-outline-light" onclick="hide1()">Login</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ==============================================================================
+                       Sing up page
+==============================================================================  -->
+  <div class="warb">
+    <div class="demo">
+      <div class="center">
+        <div id="reg">
+          <span class="borderline"></span>
+          <form action="">
+            <h2>Sign up</h2>
+            <div class="inputbox">
+              <input type="text" required="required">
+              <span>User Name</span>
+            </div>
+            <div class="inputbox">
+              <input type="text" required="required">
+              <span>Email</span>
+            </div>
+            <div class="inputbox">
+              <input type="password" required="required">
+              <span>Password</span>
+            </div>
+            <button id="btn1"><b>Sing up</b></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================================================================
+                       content up page
+==============================================================================  -->
+    <div class="demo1">
+      <div class="content">
+        <h1>Welcome to Resturant</h1>
+        <h2>You don't have to wait,</h2>
+        <h3>order a quick diner</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- <script>
+
+    box.style.display = 'none';
+    reg.style.display = 'none';
+    function hide() {
+      let btn = document.getElementById('btn')
+      let box = document.getElementById('box')
+      if (box.style.display != 'none') {
+
+        box.style.display = 'none';
+      }
+      else {
+        box.style.display = 'block';
+      }
+    }
+    function hide1() {
+      let btn = document.getElementById('btn')
+      let reg = document.getElementById('reg')
+      if (reg.style.display != 'none') {
+        reg.style.display = 'none';
+      }
+      else {
+        reg.style.display = 'block';
+      }
+    }
+  </script> -->
+</body>
+
+</html>

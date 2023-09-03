@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600&family=Dancing+Script&family=Fjalla+One&family=Merriweather:wght@300&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+/* ==============================================================================
+                       navbar section
+============================================================================== */
+
+nav {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 300;
+}
+
+.navbar .navbar-nav .nav-item a {
+    margin: 0 23px;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    color: #8b8892;
+}
+
+form .btn {
+    margin: 7px;
+}
+
+/* ==============================================================================
+                       first section
+============================================================================== */
+
+nav::after {
+    content: " ";
+    background: url('/img/overly-2.webp')no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 191vh;
+    z-index: -1;
+}
+
+/* ==============================================================================
+                       text and img start section
+============================================================================== */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid rgb(247, 11, 11); */
+    position: relative;
+    width: 100%;
+    height: 91vh;
+}
+
+.hero .img {
+    /* border: 2px solid blue; */
+    height: 62%;
+    width: 332px;
+    position: relative;
+    top: 19%;
+    left: -14%;
+}
+
+.hero .contant {
+    color: #ffffff;
+    /* border: 2px solid rgb(7, 28, 45); */
+    height: 49%;
+    width: 675px;
+    position: relative;
+    top: 30%;
+    left: 6%;
+}
+
+.hero .contant h1 {
+    font-size: 68px;
+}
+
+.hero .contant span {
+    color: orange;
+}
+
+.hero .contant p {
+    position: relative;
+    bottom: -10%;
+}
+
+/* ==============================================================================
+                       about us section
+============================================================================== */
+
+.about {
+    margin-top: 3%;
+    /* border: 3px solid blue; */
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.about .right {
+    flex-basis: 30%;
+}
+
+.about .right h3 {
+    color: orange;
+    font-family: 'Merriweather', serif;
+}
+
+.about .right .year1 h1 {
+    margin-left: 7%;
+    font-size: 3rem;
+    font-weight: 1000;
+    color: orange;
+}
+
+.about .right .year1 .p {
+    margin-left: 14%;
+}
+
+.about .right .year1 .p p {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .right .year1 {
+    border-left: 7px solid orange;
+    width: 50%;
+    height: 64%;
+    display: flex;
+    align-items: center;
+}
+
+.about .right .year {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    height: 91px;
+}
+
+.about .gallery {
+    position: relative;
+    display: flex;
+    width: 88vh;
+    top: -24px;
+    /* border: 2px solid black; */
+    height: 81vh;
+    flex-wrap: wrap;
+    margin: 0 5px;
+}
+
+.about .gallery .ro-1 {
+    height: 50%;
+    width: 50%;
+    /* border: 2px solid red; */
+    background-size: cover;
+    /* background-position: top; */
+    /* background-color: #222; */
+    background-blend-mode: hard-light;
+
+}
+
+.about .gallery .ro-2 {
+    height: 37%;
+    width: 38%;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    /* border: 2px solid red; */
+    /* background-position: top; */
+    /* background-color: #222; */
+}
+
+.about .gallery #box-1 {
+    position: relative;
+    top: 1%;
+}
+
+.about .gallery #box-2 {
+    position: relative;
+    top: 14%;
+    left: 2.5%;
+}
+
+.about .gallery #box-3 {
+    position: relative;
+    top: 3.5%;
+    left: 12%;
+}
+
+.about .gallery #box-4 {
+    position: relative;
+    top: 3.5%;
+    right: -14.6%;
+}
+
+.about .btn {
+    border-radius: 23px;
+    width: 11.6rem;
+    font-weight: 800;
+    line-height: 2.7rem;
+}
+
+/* ==============================================================================
+                       private section
+============================================================================== */
+
+.private {
+    background: url('/img/overly.jpg')center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    height: 48vh;
+    /* border: 2px solid red; */
+    background-attachment: fixed;
+}
+
+.private .overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    opacity: 0.4;
+}
+
+.private .text h4 {
+    margin-left: 37%;
+    color: white;
+}
+
+.private .text h1 {
+    color: white;
+    font-weight: 700;
+}
+
+/* ==============================================================================
+                       our food menu titel section
+============================================================================== */
+
+.food-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+    margin-top: 3%;
+    /* border: 2px solid red; */
+}
+
+.food-titel .titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 67px;
+    width: 26vw;
+    height: 18vh;
+    /* border: 2px solid blue; */
+    box-shadow: 3px 6px 20px #989595;
+}
+
+.food-titel .titel h1 {
+    font-weight: 800;
+}
+
+.food-titel .titel h4 {
+    color: orange;
+}
+
+/* ==============================================================================
+                       our food menu section
+============================================================================== */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 50vh;
+    margin-top: 3%;
+}
+
+.menu .food-menu {
+    /* border: 2px solid black; */
+    width: 394px;
+    height: 83%;
+    margin: 0 2%;
+    border-radius: 23px;
+    box-shadow: 7px 17px 24px #989595;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menu .food-menu img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.menu .food-menu .img {
+    position: relative;
+    margin-bottom: -253px;
+    height: 100%;
+}
+
+.menu .food-menu .text {
+    /* margin-top: -66%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.menu .food-menu .text h2 {
+    font-weight: 800;
+}
+
+.menu .food-menu .text h3 {
+    color: orange;
+}
+
+.menu .food-menu .link {
+    margin-top: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.menu .food-menu .link .btn {
+    border-radius: 23px;
+    width: 11.6rem;
+    font-weight: 800;
+    line-height: 2.7rem;
+}
+
+/* ==============================================================================
+                    hover   our food menu section
+============================================================================== */
+
+.menu .food-menu:hover img {
+    transform: scale(1.1);
+}
+
+/* ==============================================================================
+                    video section
+============================================================================== */
+
+.video {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    width: 98.9vw;
+    height: 68vh;
+    /* border: 2px solid blue; */
+}
+
+.video .c-video video {
+    margin-left: 23%;
+    /* border: 2px solid green; */
+    width: 26vw;
+    height: 71vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.video .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-right: 6%;
+}
+
+.video .text .c-text {
+    margin-top: 5%;
+    /* border: 2px solid black; */
+}
+
+.video .text .c-text h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+
+.video .text .img {
+    margin-top: 6%;
+    width: 27vw;
+    height: 5vh;
+}
+
+.video .text .img img {
+    width: 45vw;
+}
+
+.video .text .c-text .par-img {
+    margin-top: 3%;
+    height: 30vh;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video .text .c-text .par-img .c-img {
+    justify-content: center;
+    display: flex;
+    height: 34vh;
+    /* border: 2px solid black; */
+}
+
+.video .text .c-text .par-img .c-img img {
+    /* border: 2px solid red; */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 110%;
+    height: 33vh;
+    animation: roted 6s infinite;
+    transition: all 4s ease-in;
+
+}
+
+.video .text .c-text .par-img .c-text {
+    margin-right: 10%;
+    font-size: 1.5rem;
+    margin-top: -4%;
+}
+
+.video .text .c-text .par-img .c-text a {
+    margin-top: 7%;
+}
+
+/* ==============================================================================
+                    hover a section
+============================================================================== */
+
+.video .text .c-text .par-img .c-text a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* @keyframes roted{
+    100%{
+    transform: rotate(360deg);
+    }
+} */
+
+/* ==============================================================================
+                  catering srevices titel  section
+============================================================================== */
+
+.srevices-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 22vh;
+    margin-top: 3%;
+    /* border: 2px solid red; */
+}
+
+.srevices-titel .titel {
+    filter: drop-shadow(1px 6px 0px #989595);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius: 67px; */
+    width: 26vw;
+    height: 9vh;
+    /* border: 2px solid blue; */
+    /* box-shadow: 3px 6px 20px #989595; */
+}
+
+.srevices-titel .titel h1 {
+    font-weight: 800;
+}
+
+.srevices-titel img {
+    margin-top: 8%;
+}
+
+/* ==============================================================================
+                    catering srevices  section
+============================================================================== */
+
+.srevices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 50vh;
+    margin-top: 1%;
+}
+
+.srevices .c-srevices {
+    /* border: 2px solid black; */
+    width: 394px;
+    /* width: 24%; */
+    height: 83%;
+    margin: 0 2%;
+    border-radius: 23px;
+    box-shadow: 7px 17px 24px #989595;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.srevices .c-srevices img {
+    width: 30%;
+}
+
+.srevices .c-srevices .s-1 {
+    text-align: center;
+    margin-top: 13%;
+}
+
+.srevices .c-srevices .s-2 {
+    text-align: center;
+    margin-top: 0%;
+}
+
+.srevices .c-srevices .s-3 {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.srevices .c-srevices .text {
+    text-align: center;
+    width: 94%;
+    color: black;
+    /* border: 2px solid red; */
+    margin-top: 0;
+}
+
+.srevices .c-srevices .t-1 {
+    margin-top: 6%;
+}
+
+.srevices .c-srevices .text h2 {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+/* ==============================================================================
+                       follwer section
+============================================================================== */
+
+.follow {
+    background: url('/img/follow.jpg')center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    height: 48vh;
+    /* border: 2px solid red; */
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.follow .text{
+margin: 0 70px;
+}
+
+.follow .text .number {
+    display: flex;
+    justify-content: center;
+}
+
+.follow .text .number h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.follow .text .number span{
+    font-weight: 700;
+    color: orange !important;
+    font-size: 2rem;
+    margin-left: 6%;
+}
+
+/* ==============================================================================
+                    special Dish titel  section
+============================================================================== */
+
+.offer-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 22vh;
+    margin-top: 3%;
+    /* border: 2px solid red; */
+}
+
+.offer-titel .titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: drop-shadow(1px 6px 0px #989595);
+    /* border-radius: 67px; */
+    width: 26vw;
+    height: 9vh;
+    /* border: 2px solid blue; */
+    /* box-shadow: 3px 6px 20px #989595; */
+}
+
+.offer-titel .titel h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.offer-titel img {
+    margin-top: 8%;
+}
+
+/* ==============================================================================
+                   offer special  section
+============================================================================== */
+.container {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    width: 647px;
+    height: 248px;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.container .box .img {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+
+.container .box .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid green; */
+    background-color: #d8ca9db8;
+}
+
+/* ==============================================================================
+                   photo gallry  section
+============================================================================== */
+.gallery-main {
+    align-items: center;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 135vh;
+    background: url('/img/bg-gallery.jpg')no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.gallery-heding {
+    margin-top: 0%;
+}
+
+.gallery-main .gallery-heding h1 {
+    color: #d1d1c6;
+    font-size: 4rem;
+}
+
+.gallery-main .gallery-heding img {
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.gallery-main .gallery-heding h2 {
+    color: orange;
+    margin-left: 33%;
+}
+
+.gallery-main .gallery-photo {
+    width: 70%;
+    margin-top: 3%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px;
+}
+
+.gallery-main .gallery-photo .box {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-main .gallery-photo .gall-1 {
+    grid-row: span 1;
+}
+
+.gallery-main .gallery-photo .gall-2 {
+    grid-row: span 2;
+}
+
+.gallery-main .gallery-photo .gall-3 {
+    grid-row: span 3;
+}
+
+/*==============================================================================
+                         chef  titel section
+============================================================================== */
+
+.chef-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 13vh;
+    margin-top: 3%;
+    /* border: 2px solid red; */
+}
+
+.chef-titel .titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: drop-shadow(1px 6px 0px #989595);
+    /* border-radius: 67px; */
+    width: 33vw;
+    height: 9vh;
+    /* border: 2px solid blue; */
+    /* box-shadow: 3px 6px 20px #989595; */
+}
+
+.chef-titel .titel h1 {
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+/* ==============================================================================
+                   chef  section
+============================================================================== */
+
+.chef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 63vh;
+    margin-top: 3%;
+}
+
+.chef .c-chef {
+    /* border: 2px solid black; */
+    width: 394px;
+    /* width: 24%; */
+    height: 101%;
+    margin: 0 2%;
+    border-radius: 5px;
+    box-shadow: 7px 17px 24px #989595;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chef .c-chef .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chef .c-chef .img {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 81%;
+}
+
+.chef .c-chef .text {
+    text-align: center;
+    color: black;
+    /* border: 2px solid red; */
+}
+
+/*==============================================================================
+                         customer  titel section
+============================================================================== */
+
+.customer-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 13vh;
+    margin-top: 3%;
+    /* border: 2px solid red; */
+}
+
+.customer-titel .titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: drop-shadow(1px 6px 0px #989595);
+    /* border-radius: 67px; */
+    width: 33vw;
+    height: 9vh;
+    /* border: 2px solid blue; */
+    /* box-shadow: 3px 6px 20px #989595; */
+}
+
+.customer-titel .titel h1 {
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+/* ==============================================================================
+                   customer  section
+============================================================================== */
+
+.customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 63vh;
+    margin-top: 3%;
+}
+
+.customer .c-customer {
+    /* border: 2px solid black; */
+    width: 394px;
+    /* width: 24%; */
+    height: 96%;
+    margin: 0 2%;
+    border-radius: 5px;
+    box-shadow: 7px 17px 24px #989595;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customer .c-customer .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customer .c-customer .img {
+    /* border: 2px solid red; */
+    width: 67%;
+    height: 54%;
+    border-radius: 50%;
+}
+
+.customer .c-customer .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 52%;
+}
+
+.customer .c-customer .text p {
+    font-size: large;
+}
+
+/* ==============================================================================
+                   footer  section
+============================================================================== */
+footer {
+    margin-top: 3%;
+}
+
+.footer-main {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.ro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background: url('/img/bg-gallery.jpg')center center/cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
